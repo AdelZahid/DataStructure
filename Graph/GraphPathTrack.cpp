@@ -129,12 +129,15 @@ int main()
         cout << "The graph is connected" << endl;
     }
     cout << "The connected components are:" << endl;
-    for (auto &comp: cc) {
-        for(auto &i: comp) {
+    for (auto &comp: cc) 
+    {
+        for(auto &i: comp)
+        {
             cout << i << " ";
         }
         cout << endl;
     }
+
     cout<<"Enter the target node"<<endl;
     int T;
     cin>>T;
@@ -156,6 +159,7 @@ int main()
             cout<<"Shortest path exist including 2 and 3"<<endl;
         }
     }
+
     cout<<level[T]<<endl;
     if (isbipartate)
     {
